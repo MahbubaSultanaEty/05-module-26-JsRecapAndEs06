@@ -60,5 +60,10 @@ console.log(first, second);
 
 // or
 const numbers = [1, 2, 3, 4, 6, 7];
-const [num1, num2, num3] = numbers;
-console.log(num1, num2, num3)
+// const [num1, num2, num3] = numbers;
+// console.log(num1, num2, num3);
+
+// you can access all the values at once using [rest] operator
+const [num1, num2, ...restNumbers] = numbers;
+console.log(num1);
+console.log(restNumbers);
