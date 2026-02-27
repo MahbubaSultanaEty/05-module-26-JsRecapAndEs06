@@ -2,7 +2,7 @@
 
 const user = { name: "Mahbuba", age: 23, role: "Developer" };
 const keys = Object.keys(user);
-console.log(keys);
+console.log(keys); //output: [ 'name', 'age', 'role' ]
 
 
 
@@ -13,7 +13,11 @@ const product = {
   description: "Discover Cadbury Dairy Milk - Made with a glass and a half of fresh milk"
 };
 const values = Object.values(product);
-console.log(values);
+console.log(values); /*output: [
+  'Dairy Milk',
+  200,
+  'Discover Cadbury Dairy Milk - Made with a glass and a half of fresh milk'     
+] */
 
 
 
@@ -25,7 +29,7 @@ const result = {
   physics: 90
 };
 const entries = Object.entries(result);
-console.log(entries);
+console.log(entries); //output: [ [ 'math', 80 ], [ 'english', 75 ], [ 'physics', 90 ] ]
 
 
 
@@ -42,7 +46,7 @@ delete settings.write;
 
 settings.notifications = true; //changed the value of an existing key
 settings.read = true; //added a new key and value
-console.log(settings);
+console.log(settings); //output: { darkMode: true, notifications: true, delete: false, read: true }
 
 
 
@@ -54,7 +58,7 @@ const scoreboard = {
 };
 Object.freeze(scoreboard);
 delete scoreboard.teamA;
-scoreboard.teamD = 56;
+// scoreboard.teamD = 56;
 
 scoreboard.teamA = 10;
 
@@ -74,4 +78,4 @@ cart.rice = 5;
 delete cart.oil;
 cart.flour = 4;
 
-console.log(cart);
+console.log(cart); //output : { rice: 5, oil: 1, salt: 3 }
