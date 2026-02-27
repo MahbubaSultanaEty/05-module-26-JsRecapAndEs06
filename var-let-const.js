@@ -7,7 +7,7 @@ console.log(name);
 
 var name = "Mamun";
 
-// Let is block-scoped and can be redeclared like var. Use let only when you explicitly know that the variable's value needs to be reassigned, such as in a loop counter. It's a part of modern ES6. let cant be redeclared, it will throw an error
+// Let is block-scoped and can be reassigned like var. Use let only when you explicitly know that the variable's value needs to be reassigned, such as in a loop counter. It's a part of modern ES6. let cant be redeclared, it will throw an error
 
 let age = 20;
 age = 21;

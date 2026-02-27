@@ -1,4 +1,4 @@
-// Object chaining (often called property chaining) is simply the act of accessing nested properties or methods using the dot (.) operator in a single line.
+// Object chaining (often called property chaining) is simply the act of accessing nested properties or methods using the dot (.) or bracket operator in a single line.
 const employee = {
     name: "Dan Abramov",
     1: "desk-01",
@@ -12,6 +12,7 @@ const employee = {
             }
 }
 
+console.log(employee["family"]["sister"]["Age"]); //output: 57
 console.log(employee.family.sister.Age); //output: 57
 
 // but if we try to access a property , but the properties parent object isn't defined we will get an error
