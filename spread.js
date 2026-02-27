@@ -40,4 +40,5 @@ const person3 = { ...person };
 person3.Age = 22;
 person3.profession = "developer";
 
-console.log(person, person3); //output= { name: 'Mahbuba', Age: 20, profession: 'student' } { name: 'Mahbuba', Age: 22, profession: 'developer' } --------------- this time person value didn't changed
+console.log(person, person3); //output= { name: 'Mahbuba', Age: 20, profession: 'student' } { name: 'Mahbuba', Age: 22, profession: 'developer' } --------------- this time {person} value didn't changed
+
